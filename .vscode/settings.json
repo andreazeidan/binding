@@ -28,4 +28,5 @@
 	},
 	"github.copilot.nextEditSuggestions.enabled": false,
 	"workbench.colorTheme": "GitHub Dark Default",
+	"liveServer.settings.port": 5501,
 }
