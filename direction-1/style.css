@@ -1,14 +1,62 @@
 :root {
 	/* color */
-	--oxblood: #5c1018;   /* deep red: page, text, dark cards */
-	--cream:   #f4ede1;   /* paper */
-	--blush:   #e8c3c3;   /* accent: script, ornaments, lines */
+	--red: #5c1018;
+	--cream:   #f4ede1;
+	--pink:   #e8c3c3;
 
 	/* type */
 	--serif:  "Cormorant Garamond", "Cormorant", Garamond, Georgia, serif;
 	--script: "Pinyon Script", "Snell Roundhand", "Apple Chancery", cursive;
 }
 
+body {
+	background-color: var(--red);
+	font-family: var(--serif);
+	font-size: 1.2rem;
+	line-height: 2rem;
+
+}
+
+article {
+	background-color: var(--cream);
+	padding: 1rem;
+}
+
+header{
+	margin:1rem;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 0.1rem var(--cream);
+
+
+	color: var(--cream);
+	background-color: var(--red);
+	min-block-size: 85vh;
+}
+
+h1{
+	font-size: 1rem;
+	line-height: 6rem;
+}
+.title {
+	display:block;
+	font-family: var(--script);
+	font-size: 4rem;
+	line-height: 5rem;
+}
+
+article{
+	padding-block-start: 4rem;
+}
 
 
 
+h3{
+	font-family: var(--script);
+	text-align: center;
+	font-size: 2rem;
+	color: var(--red)
+	
+}
