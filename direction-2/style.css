@@ -5,15 +5,16 @@
 	--black:black;
 
 	/* type */
-	--serif:  "Cormorant Garamond", serif;
+	--serif:  "DM Serif Display", serif;
 	--bold: "Anton";
 }
 
 body {
-	background-color: var(--red);
+	background-color: var(--black);
 	font-family: var(--serif);
 	font-size: 1.2rem;
 	line-height: 2rem;
+	color: var(--white)
 
 }
 
@@ -23,16 +24,16 @@ article {
 }
 
 header{
-	margin:1rem;
 	text-align: center;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: solid 0.1rem var(--cream);
+	font-family: var(--bold);
+	background-color: var(--red);
 
 
-	color: var(--cream);
+	color: var(--black);
 	background-color: var(--red);
 	min-block-size: 80vh;
 }
@@ -49,31 +50,38 @@ h1{
 .title {
 	display:block;
 	font-family: var(--bold);
-	font-size: 4rem;
-	line-height: 5rem;
+	font-size: 5rem;
+	line-height: 2rem;
+}
+
+.beautytitle{
+	color: var(--white);
+	font-family: var(--serif);
+	font-style: italic;
 }
 
 blockquote {
-	position: relative;
 	background-color: var(--red);
-	color: var(--cream);
+	color: var(--white);
 	margin-block: 2rem;
 	padding: 3rem;
-	font-style: ;
+	font-weight: bold;
+	font-style: italic;
 
+	&.beauty em {
+		color: var(--black);
+		font-family: var(--bold);
+		font-size: 2rem;
+		font-style: normal;
+		padding-block-end: 4rem;
 
-	&::after {
-		content: '';
-		position: absolute;
-		inset: 1rem;
-		border: 1px solid var(--pink);
 	}
-
 }
 
 
+
 h3{
-	font-family: var(--script);
+	font-family: var(--bold);
 	text-align: center;
 	font-size: 4rem;
 	line-height: 4.3rem;
