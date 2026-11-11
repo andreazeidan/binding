@@ -1,3 +1,114 @@
-body{
-	background-color: green;
+:root {
+	/* color */
+	--pink:#e8857c;
+	--white:#f4efe6;
+	--black:black;
+	--blue: #2340d9;
+
+	/* type */
+	--title:  "Anton", sans-serif;
+	--body: "Space Grotesk", serif;
 }
+
+body {
+	background-color: var(--white);
+	font-family: var(--body);
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: var(--black)
+
+}
+
+article {
+	padding: 1rem;
+	position: relative;
+}
+
+header{
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--title);
+
+
+	color: var(--pink);
+	min-block-size: 80vh;
+	border-block-end: solid 0.2rem var(--black);
+}
+
+ol{
+	display: flex;
+	justify-content: space-between;
+}
+
+h1{
+	font-size: 1rem;
+	line-height: 6rem;
+}
+.title {
+	display:block;
+	font-family: var(--title);
+	font-size: 5rem;
+	line-height: 5rem;
+}
+
+.beautytitle{
+	color: var(--pink);
+	font-family: var(--serif);
+}
+
+blockquote {
+	border-block: solid 0.2rem var(--black);
+	color: var(--pink);
+	margin-block: 2rem;
+	margin-inline:-1rem;
+	padding: 3rem;
+	font-weight: bold;
+	font-style: italic;
+	position:relative;
+
+	&.beauty em {
+		display: block;
+		color: var(--blue);
+		font-family: var(--title);
+		font-size: 2.5rem;
+		font-style: normal;
+		text-align: right;
+		transform: rotate(-7deg);
+	}
+
+	&.redquote {
+	background-color: var(--blue);
+	color: var(--pink);
+	margin-block: 2rem;
+	margin-inline:-1rem;
+	padding: 3rem;
+	font-weight: bold;
+	font-style: italic;
+	border: none;
+	}
+}
+
+
+
+h3{
+	font-family: var(--title);
+	text-align: center;
+	font-size: 5rem;
+	line-height: 4.5rem;
+	color: var(--blue);
+	padding-block:1rem;
+	position: sticky;
+	top: 0.75rem;
+	font-style: bold;
+	opacity: 60%;
+	text-transform: uppercase;
+}
+
+strong{
+	color: var(--red);
+	font-weight: bold;
+}
+
