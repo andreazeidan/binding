@@ -26,6 +26,7 @@ header{
 	margin:1rem;
 	text-align: center;
 	display:flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border: solid 0.1rem var(--cream);
@@ -34,6 +35,11 @@ header{
 	color: var(--cream);
 	background-color: var(--red);
 	min-block-size: 80vh;
+}
+
+ol{
+	display: flex;
+	justify-content: space-between;
 }
 
 h1{

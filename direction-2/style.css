@@ -1,3 +1,87 @@
-body{
-	background-color: blue;
+:root {
+	/* color */
+	--red:#E3261C;
+	--white:white;
+	--black:black;
+
+	/* type */
+	--serif:  "Cormorant Garamond", serif;
+	--bold: "Anton";
+}
+
+body {
+	background-color: var(--red);
+	font-family: var(--serif);
+	font-size: 1.2rem;
+	line-height: 2rem;
+
+}
+
+article {
+	background-color: var(--cream);
+	padding: 1rem;
+}
+
+header{
+	margin:1rem;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: solid 0.1rem var(--cream);
+
+
+	color: var(--cream);
+	background-color: var(--red);
+	min-block-size: 80vh;
+}
+
+ol{
+	display: flex;
+	justify-content: space-between;
+}
+
+h1{
+	font-size: 1rem;
+	line-height: 6rem;
+}
+.title {
+	display:block;
+	font-family: var(--bold);
+	font-size: 4rem;
+	line-height: 5rem;
+}
+
+blockquote {
+	position: relative;
+	background-color: var(--red);
+	color: var(--cream);
+	margin-block: 2rem;
+	padding: 3rem;
+	font-style: ;
+
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 1rem;
+		border: 1px solid var(--pink);
+	}
+
+}
+
+
+h3{
+	font-family: var(--script);
+	text-align: center;
+	font-size: 4rem;
+	line-height: 4.3rem;
+	color: var(--red);
+	padding-block:3rem;
+}
+
+strong{
+	color: var(--red);
+	font-weight: bold;
 }
