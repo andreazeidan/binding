@@ -1,0 +1,14 @@
+:root {
+	/* color */
+	--oxblood: #5c1018;   /* deep red: page, text, dark cards */
+	--cream:   #f4ede1;   /* paper */
+	--blush:   #e8c3c3;   /* accent: script, ornaments, lines */
+
+	/* type */
+	--serif:  "Cormorant Garamond", "Cormorant", Garamond, Georgia, serif;
+	--script: "Pinyon Script", "Snell Roundhand", "Apple Chancery", cursive;
+}
+
+
+
+
