@@ -47,21 +47,23 @@ h1{
 	line-height: 5rem;
 }
 
-blockquote{
+blockquote {
+	position: relative;
 	background-color: var(--red);
 	color: var(--cream);
 	margin-block: 2rem;
 	padding: 3rem;
-	border: solid 0.6rem var(--cream);
-	border-style: double;
+	font-style: ;
 
-	&::after{
-	content:'';
-	position:absolute;
 
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 1rem;
+		border: 1px solid var(--pink);
+	}
 
 }
-
 
 
 h3{
