@@ -1,0 +1,142 @@
+:root {
+	/* color */
+	--red: #5c1018;
+	--cream:   #f4ede1;
+	--pink:   #eba8a8;
+
+	/* type */
+	--serif:  "Cormorant Garamond", "Cormorant", Garamond, Georgia, sans-serif;
+	--script: "Pinyon Script", serif;
+}
+
+body {
+	background-color: var(--red);
+	font-family: var(--serif);
+	font-size: 1.2rem;
+	line-height: 2rem;
+
+}
+
+article {
+	background-color: var(--cream);
+	padding-inline: 1rem;
+}
+
+
+header{
+	margin:1rem;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: solid 0.1rem var(--cream);
+
+
+	color: var(--cream);
+	background-color: var(--red);
+	min-block-size: 80vh;
+}
+
+ol{
+	display: flex;
+	justify-content: space-between;
+}
+
+h1{
+	font-size: 1rem;
+	line-height: 6rem;
+}
+.title {
+	display:block;
+	font-family: var(--script);
+	font-size: 4rem;
+	line-height: 5rem;
+}
+
+p{
+	margin-block-start: 1rem;
+}
+
+blockquote {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	position: relative;
+	background-color: var(--red);
+	color: var(--cream);
+	margin-block: 2rem;
+	padding: 3rem;
+	margin-inline: -1rem;
+
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 1rem;
+		border: 1px solid var(--pink);
+	}
+
+	&.beauty p:nth-of-type(even) {
+		align-self: flex-end;
+	}
+
+	}
+section{
+	padding-block-start: 3rem;
+}
+em{
+	display: block;
+	font-family: var(--serif);
+	font-size: 3rem;
+	line-height: 3.5rem;
+	padding-block: 1.2rem;
+	color: var(--pink);
+}
+
+h3{
+	font-family: var(--script);
+	text-align: center;
+	font-size: 3rem;
+	line-height: 4.3rem;
+	color: var(--red);
+	padding-block-start:1rem;
+}
+
+strong{
+	color: var(--red);
+	font-weight: bold;
+}
+
+a:link,
+a:visited {
+	font-weight: bold;
+  text-decoration: underline;
+  color: var(--pink);
+}
+a:hover {
+  color: var(--red);
+}
+
+.button,
+.button:link,
+.button:visited {
+  font-size: 1rem;;
+  padding: 1rem;
+  border: 0.1rem solid var(--pink);
+  background-color: var(--cream);
+  color: var(--red);
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--cream);
+  color: var(--cream);
+}
+ .button p{
+	color: var(--pink)
+ }
+
+ .credits p {
+  color: var(--pink);
+}
