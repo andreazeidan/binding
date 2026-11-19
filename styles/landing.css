@@ -29,6 +29,7 @@ p {
 
 .about {
 	margin-block-end: 3rem;
+	text-align: left;
 }
 
 ol {
