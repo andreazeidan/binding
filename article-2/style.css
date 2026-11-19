@@ -1,12 +1,12 @@
 :root {
 	/* color */
-	--red: #5c1018;
+	--red: #C1AF5E;
 	--cream:   #f4ede1;
 	--pink:   #eba8a8;
 
 	/* type */
-	--serif:  "Cormorant Garamond", "Cormorant", Garamond, Georgia, sans-serif;
-	--script: "Pinyon Script", serif;
+	--serif:  "Space Grotesk", sans-serif;
+	--script: "Anton", sans-serif;
 }
 
 body {
@@ -68,6 +68,7 @@ blockquote {
 	margin-block: 2rem;
 	padding: 3rem;
 	margin-inline: -1rem;
+	font-family: var(--script);
 
 
 	&::after {
